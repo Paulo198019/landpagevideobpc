@@ -2,55 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BPC/LOAS - Débora Kulczar Advocacia</title>
-  <style>
-    body {margin:0;font-family:Arial,sans-serif;color:#333;line-height:1.6;}
-    .container {max-width:1200px;margin:0 auto;padding:0 20px;}
-    :root {--cor-principal:#0A3C56;--cor-secundaria:#18A0FB;--cor-cta:#32CD32;--cor-fundo:#0E1B28;}
-    header {background-color:var(--cor-principal);color:#fff;padding:15px 0;position:sticky;top:0;z-index:100;}
-    header .container {display:flex;justify-content:space-between;align-items:center;}
-    .logo {font-size:1.4em;font-weight:bold;}
-    .menu ul {list-style:none;display:flex;padding-left:0;margin:0;}
-    .menu li {margin:0;}
-    .menu a {color:#fff;text-decoration:none;padding:0 15px;transition:color .3s;}
-    .cta-header {background-color:var(--cor-secundaria);padding:8px 15px;text-decoration:none;color:#fff;border-radius:5px;}
-
-    .hero {background-color:var(--cor-fundo);color:#fff;padding:80px 0;}
-    .hero .container {display:flex;align-items:center;gap:40px;flex-wrap:wrap;}
-    .hero-content h1 {font-size:2.8em;margin-bottom:10px;color:#1C3F60;} /* Alterado para cor executiva */
-    .hero-content h2 {font-size:1.8em;margin-bottom:20px;}
-    .cta-principal {display:inline-block;background-color:var(--cor-cta);color:var(--cor-fundo);font-weight:bold;padding:15px 30px;margin-top:30px;text-decoration:none;border-radius:8px;font-size:1.1em;transition:background-color .3s;}
-
-    .hero-media {flex:1 1 420px;width:100%;}
-    .hero-media .ratio-box {position:relative;width:100%;padding-top:56.25%;overflow:hidden;border-radius:8px;background:#000;}
-    .hero-media iframe {position:absolute;inset:0;width:100%;height:100%;border:0;}
-
-    .servicos {padding:60px 0;background-color:#f4f4f4;text-align:center;}
-    .servicos h2 {margin-bottom:20px;}
-    .servicos-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px;}
-    .servico-card {background-color:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.05);text-align:center;}
-    .icone {font-size:2.5em;color:var(--cor-secundaria);display:block;margin-bottom:10px;}
-
-    .sobre {padding:60px 0;background-color:#fff;text-align:center;}
-    .sobre .img-wrapper {max-width:800px;margin:0 auto;}
-    .sobre img {max-width:100%;height:auto;border-radius:8px;display:block;margin:0 auto;}
-
-    .processo {background-color:#f9f9f9;padding:60px 0;text-align:center;}
-    .processo-steps {display:flex;flex-wrap:wrap;justify-content:center;gap:30px;margin-top:30px;}
-    .step-item {background:#fff;padding:20px;border-radius:8px;width:220px;box-shadow:0 2px 5px rgba(0,0,0,.1);} 
-
-    footer {background-color:var(--cor-principal);color:#fff;padding:40px 20px;text-align:center;}
-    .cta-final {background-color:var(--cor-secundaria);text-align:center;padding:20px 0;font-size:1.2em;margin-bottom:20px;}
-    .footer-columns {display:flex;flex-wrap:wrap;justify-content:space-around;margin-top:20px;}
-    .footer-column {width:250px;margin:10px;text-align:left;}
-    .footer-column h4 {margin-bottom:10px;color:var(--cor-cta);} 
-
-    @media (max-width:768px){
-      .hero .container{flex-direction:column;text-align:center;}
-      .hero-media{max-width:100%;}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -71,11 +25,12 @@
   <section id="inicio" class="hero">
     <div class="container">
       <div class="hero-content">
-        <h1>BPC/LOAS: Receba o Benefício Que É Seu Direito</h1>
+        <h1 class="executivo">BPC/LOAS: Receba o Benefício Que É Seu Direito</h1>
         <h2>Idosos e pessoas com deficiência têm direito a 1 salário mínimo mensal garantido por lei.</h2>
         <p>Atendimento rápido, online e sem burocracia em todo o Brasil. Entre em contato.</p>
         <a href="https://wa.me/5511922228326" class="cta-principal">🟢 Fale com um Advogado Especialista Agora</a>
       </div>
+
       <div class="hero-media">
         <div class="ratio-box">
           <iframe id="heroVideo"
@@ -83,6 +38,10 @@
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             title="Vídeo Institucional"></iframe>
+          <button id="unmuteBtn" class="unmute-banner hidden" aria-label="Ativar som">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12zm0-8v2a8 8 0 0 1 0 12v2c3.53-1.57 6-5.1 6-9s-2.47-7.43-6-9z"/></svg>
+            Ativar som
+          </button>
         </div>
       </div>
     </div>
@@ -123,5 +82,6 @@
   </footer>
 
   <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="scripts.js" defer></script>
 </body>
 </html>
