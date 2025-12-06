@@ -1,56 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Débora Kulczar - Advogada</title>
-    <link rel="stylesheet" href="style.css">
+   ">
+    <title>Landing Page - Vídeo BPC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078D7;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .cta {
+            background: #0078D7;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #005fa3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <img src="assets/Designer.png" alt="Logo Débora Kulczar" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Descubra Como Solicitar o BPC</h1>
+        <p>Assista ao vídeo e saiba tudo sobre o Benefício de Prestação Continuada</p>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Débora Kulczar</h1>
-            <p>Advogada especializada em soluções jurídicas estratégicas.</p>
-            <a href="#contato" class="btn">Agende uma consulta</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/profile.jpg" alt="Foto profissional">
-        </div>
-    </section>
-
-    <section id="sobre" class="sobre">
-        <h2>Sobre</h2>
-        <p>Com experiência em direito empresarial e consultoria jurídica, ofereço soluções personalizadas para empresas e indivíduos.</p>
-    </section>
-
-    <section id="servicos" class="servicos">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Consultoria Jurídica</li>
-            <li>Contratos e Compliance</li>
-            <li>Assessoria Empresarial</li>
-        </ul>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@deborakulczar.com</p>
-        <p>Telefone: (11) 99999-9999</p>
-    </section>
+    <div class="container">
+        <div class="video-container">
+            <!-- Substitua o link abaixo pelo seu vídeo do YouTube -->
+            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID     </div>
+        <button class="cta" onclick="window.location
+    </div>
 
     <footer>
-        <p>&copy; 2025 Débora Kulczar - Todos os direitos reservados.</p>
+        <p>&copy; 2025 - Sua Empresa. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
