@@ -1,26 +1,11 @@
-:root {
-  --primary: #004aad;
-  --text: #333;
-  --bg: #f9f9f9;
-}
 
-* { box-sizing: border-box }
-body { margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--bg); }
-
-.hero { position: relative; color: #fff; }
-.hero-media { position: relative; overflow: hidden; max-height: 60vh; }
-.hero-video { width: 100%; height: auto; display: block; }
-.hero-content { background: var(--primary); padding: 24px 16px; text-align: center; }
-.hero-content h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); }
-.subtitle { margin-top: 8px; font-size: clamp(1rem, 2.2vw, 1.2rem); }
-
-.container { max-width: 900px; margin: 24px auto; padding: 0 16px; color: var(--text); }
-.info h2 { color: var(--primary); font-size: 1.2rem; }
-.bullets { padding-left: 18px; }
-.bullets li { margin: 8px 0; line-height: 1.55; }
-
-.cta { margin-top: 20px; text-align: center; }
-.btn { display:inline-block; background:#004aad; color:#fff; padding:12px 18px; border-radius:6px; text-decoration:none; font-weight:600; }
-.btn:hover { background:#003580; }
-
-.footer { text-align:center; font-size:.9rem; color:#666; padding: 16px 0; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #004aad; color: #fff; padding: 20px; text-align: center; }
+.hero { text-align: center; padding: 20px; }
+.hero img { max-width: 100%; height: auto; border-radius: 8px; }
+.video-container { text-align: center; margin: 20px 0; }
+iframe { width: 90%; height: 400px; border-radius: 8px; }
+.conteudo { padding: 20px; max-width: 800px; margin: auto; line-height: 1.6; }
+.whatsapp-btn { text-align: center; margin: 20px; }
+.whatsapp-btn a { background: #25d366; color: #fff; padding: 15px 25px; text-decoration: none; font-size: 18px; border-radius: 8px; }
+footer { background: #f4f4f4; text-align: center; padding: 15px; font-size: 14px; }
