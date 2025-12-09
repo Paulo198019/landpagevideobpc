@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Destaque no CTA ao rolar
+// Destaque no botão WhatsApp ao rolar
 window.addEventListener('scroll', () => {
     const btn = document.querySelector('.whatsapp-btn a');
     if (window.scrollY > 300) {
